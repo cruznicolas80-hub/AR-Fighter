@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AR-Fighter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/f16-3.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                <a class="navbar-brand me-auto" href="index.html">AR-Fighter</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="consultas.html">Consultas</a></li>
+                    </ul>
+                </div>
+
+                <a href="carrito.html" class="ms-auto nav-link text-white" style="font-size: 1.3rem;">
+                    <img src="img/carrito.png" alt="carrito" class="icono-carrito">
+                    <span id="carrito-count">0</span>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ======================= CARRUSEL ======================= -->
+
+        <div id="myCarousel" class="carousel slide">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/f16.png" class="d-block w-100 carousel-img" alt="F-16">
+                    <div class="carousel-caption text-start">
+                        <h1>Agilidad</h1>
+                        <p>Velocidad, precisión y maniobras que definen una leyenda.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/f18escalado.png" class="carousel-img" alt="F-18">
+                    <div class="carousel-caption">
+                        <h1>Versatilidad</h1>
+                        <p>Multirrol por naturaleza, equilibrio entre control y rendimiento.</p>
+                        <p><a class="btn btn-lg btn-primary" href="tienda.html">Explorar ahora</a></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/A-10-warthog-flying-tiger-scaled.jpg" class="carousel-img" alt="A-10">
+                    <div class="carousel-caption text-end">
+                        <h1>Potencia</h1>
+                        <p>Diseño imponente y carácter indiscutible en cada pasada.</p>
+                        <p><a class="btn btn-lg btn-primary" href="consultas.html">Consultar</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+        <!-- ======================= NUESTROS PROTAGONISTAS ======================= -->
+
+        <section class="protagonistas container text-center my-5">
+
+            <h2 class="fw-bold mb-3">Descubre las máquinas legendarias que dan vida a nuestras maquetas de colección
+            </h2>
+            <p class="text-muted mb-4">Modelos icónicos que inspiran cada una de nuestras maquetas.</p>
+        </section>
+
+        <hr class="featurette-divider" />
+
+
+        <!-- ======================= VIDEOS ======================= -->
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 mb-0">
+                    F-16 Fighting Falcon
+                </h2>
+
+                <h3 class="fw-normal mt- 2">
+                    <span class="text-body-secondary">Ágil y preciso</span>
+                </h3>
+
+                <p class="lead">
+                    Ideal para quienes empiezan su colección. Detallado, compacto y con líneas aerodinámicas fieles al
+                    original.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <div class="ratio ratio-16x9 featurette-video">
+                    <iframe class="yt-clean"
+                        src="https://www.youtube-nocookie.com/embed/QI0uQfRcUe0?autoplay=1&mute=1&controls=0&loop=1&playlist=QI0uQfRcUe0&modestbranding=1&rel=0"
+                        title="Video F-16" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    F-22 Raptor
+                </h2>
+                <h3 class="fw-normal mt- 2">
+                    <span class="text-body-secondary">Tecnología Stealth</span>
+                </h3>
+                <p class="lead">
+                    Líneas furtivas, acabados premium y proporciones exactas. Una obra de ingeniería en miniatura.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="ratio ratio-16x9 featurette-video">
+                    <iframe class="yt-clean"
+                        src="https://www.youtube-nocookie.com/embed/YbzX7oGhm8w?autoplay=1&mute=1&controls=0&loop=1&playlist=YbzX7oGhm8w&modestbranding=1&rel=0"
+                        title="Video F-22" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    A-10 Thunderbolt II
+                </h2>
+                <h3 class="fw-normal mt- 2">
+                    <span class="text-body-secondary">Poder absoluto</span>
+                </h3>
+                <p class="lead">
+                    El legendario avión de apoyo cercano, reproducido con detalles como el cañón GAU-8 y paneles
+                    blindados.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="ratio ratio-16x9 featurette-video">
+                    <iframe class="yt-clean"
+                        src="https://www.youtube-nocookie.com/embed/M9aYFS_W4Bo?autoplay=1&mute=1&controls=0&loop=1&playlist=M9aYFS_W4Bo&modestbranding=1&rel=0"
+                        title="Video A-10" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- ======================= ¿POR QUÉ ELEGIRNOS? ======================= -->
+
+        <section class="container marketing mb-5 mt-5">
+
+            <h2 class="fw-bold text-center mb-5">¿Por qué elegirnos?</h2>
+
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <img src="img/f22armado.png" class="rounded-circle mb-3" width="250" height="250">
+                    <h2 class="fw-normal">Modelo realista y funcional</h2>
+                    <p>Los detalles estructurales recrean fielmente la esencia de un avión real en una maqueta
+                        impactante.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/modular.png" class="rounded-circle mb-4" width="250" height="250">
+                    <h2 class="fw-normal">Diseño modular</h2>
+                    <p>Piezas accesibles y reemplazables para mantenimiento y personalización sencilla.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/motores.png" class="rounded-circle mb-3" width="250" height="250">
+                    <h2 class="fw-normal">Propulsión eficiente y potente</h2>
+                    <p>Motor y hélices diseñados para un empuje suave y maniobrabilidad precisa.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; AR-Fighter</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

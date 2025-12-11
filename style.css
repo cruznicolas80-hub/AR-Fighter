@@ -1,0 +1,213 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+main {
+  text-align: center;
+  padding: 0 10% 30px;  
+}
+
+.grid-productos,
+.Tienda-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+footer,
+footer.bg-dark {
+  background: #2b3035;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.consultas {
+  margin-top: 100px;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.popup-carrito {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.popup-carrito.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icono-carrito {
+  width: 28px !important;
+  height: 28px !important;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.img-carrito {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #1e1e1e;
+  padding: 4px;
+}
+
+.btn-sumar,
+.btn-restar {
+  width: 32px;
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+.btn-eliminar {
+  font-size: 1.1rem;
+  padding: 0 6px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-top: 10%;
+
+}
+
+.marketing .col-lg-4 p {
+  margin-left: .75rem;
+  margin-right: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+.featurette img {
+  border-radius: 20px;
+}
+
+.featurette-video {
+  border-radius: 20px;
+  overflow: hidden;
+  background: hsl(0, 0%, 0%);
+}
+
+.featurette-video iframe.yt-clean {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.yt-clean {
+  border: 0;
+  pointer-events: none; 
+}
+
+/* Carrusel full-width */
+.carousel {
+  width: 100vw;        
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;  
+  margin-right: -50vw;
+}
+
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* Altura uniforme del carrusel */
+#myCarousel .carousel-item {
+  height: 1000px; /* podés ajustarlo a 450 o 550 si querés */
+  position: relative;
+  filter: brightness(0.95);
+}
+
+
+
+/* Imágenes del carrusel */
+#myCarousel .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* mantiene proporciones y recorta lo que sobra */
+  object-position: center;/* centra siempre el avión */
+    filter: brightness(0.75);
+
+}
+
+/* Ajuste de textos sobre la imagen */
+#myCarousel .carousel-caption {
+  bottom: 18%; /* baja o sube el texto del slide */
+  z-index: 10;
+  
+
+
+}
+
+/* elimina cualquier espacio entre navbar y carrusel */
+#myCarousel {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+ 
+h3{
+  margin-top: 20px;
+}
