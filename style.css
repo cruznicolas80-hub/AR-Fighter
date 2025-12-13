@@ -41,6 +41,7 @@ header {
 main {
   text-align: center;
   padding: 0 10% 30px;
+  flex: 1;
 }
 
 .consultas {
