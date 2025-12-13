@@ -49,30 +49,37 @@ main {
 }
 
 /* =========================
-   4) TIENDA
+   4) TIENDA (FIX CARDS)
 ========================= */
-main > .container {
-  max-width: 1100px;
-}
 
-#product-list.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
+/* Todas las cards misma altura */
 #product-list .card {
+  height: 100%;
   border-radius: 14px;
 }
 
+/* Imagen consistente */
 #product-list .card-img-top {
-  width: 100%;
-  height: 180px;
+  height: 190px;
+  /* probá 180/200 según te guste */
   object-fit: cover;
-  display: block;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
-#product-list .card-title {
-  font-weight: 600;
+/* El body en columna para poder empujar el botón al fondo */
+#product-list .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El botón siempre abajo */
+#product-list .card .btn,
+#product-list .card .agregar-carrito {
+  margin-top: auto;
+  width: 100%;
+  white-space: nowrap;
+  /* evita que "Agregar al carrito" se parta */
 }
 
 /* =========================
