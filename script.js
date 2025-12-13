@@ -44,24 +44,26 @@ if (window.location.pathname.includes("tienda.html")) {
         {
             id: 6,
             title: "F-15 Eagle",
-            description: "Caza de Superioridad diseñado para la interceptación de alta velocidad.",
-            price: 160000,
+            description: "Caza de superioridad aérea de alta velocidad.",
+            price: 170000,
             thumbnail: "img/f15.png"
         }
     ];
 
-    function cargarProductos() {
-        mostrarProductos(productos);
-    }
-
     function crearCardProducto(producto) {
         const col = document.createElement("div");
-        col.className = "col-12 col-sm-6 col-md-4";
+        
+        // MODIFICACIÓN CLAVE: Usamos las clases de Bootstrap para 3 cards por fila (col-lg-4)
+        // col-12: 1 por fila en móviles
+        // col-md-6: 2 por fila en tabletas
+        // col-lg-4: 3 por fila en escritorio
+        col.className = "col-12 col-md-6 col-lg-4"; 
 
         col.innerHTML = `
-            <div class="card h-100">
+            <div class="card h-100 shadow-sm">
                 <img src="${producto.thumbnail}" class="card-img-top" alt="${producto.title}">
-                <div class="card-body d-flex flex-column">
+                
+                <div class="card-body d-flex flex-column text-center">
                     <h5 class="card-title">${producto.title}</h5>
                     <p class="card-text">${producto.description}</p>
                     <p class="fw-bold mb-3">$ ${producto.price.toLocaleString("es-AR")}</p>
@@ -82,12 +84,10 @@ if (window.location.pathname.includes("tienda.html")) {
 
     function mostrarProductos(lista) {
         contenedorProductos.innerHTML = "";
-
         lista.forEach(producto => {
-            const card = crearCardProducto(producto);
-            contenedorProductos.appendChild(card);
+            contenedorProductos.appendChild(crearCardProducto(producto));
         });
     }
 
-    cargarProductos();
+    mostrarProductos(productos);
 }

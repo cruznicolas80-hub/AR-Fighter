@@ -113,7 +113,7 @@ if (window.location.pathname.includes("tienda.html")) {
 
   function crearCardProducto(producto) {
     const col = document.createElement("div");
-    col.className = "col-12  col-md-6";
+    col.className = "col-12  col-md-6 col-lg-4";
 
     col.innerHTML = `
       <div class="card h-100">
