@@ -166,3 +166,15 @@ document.addEventListener("click", e => {
 });
 
 
+const btnComprar = document.getElementById("btn-comprar");
+
+if (btnComprar) {
+  btnComprar.addEventListener("click", () => {
+    if (carrito.length === 0) {
+      alert("El carrito está vacío");
+      return;
+    }
+
+    alert("Gracias por tu compra 🚀\nPróximamente checkout real.");
+  });
+}
