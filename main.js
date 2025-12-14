@@ -164,3 +164,5 @@ document.addEventListener("click", e => {
     agregarAlCarrito(producto);
   }
 });
+
+
