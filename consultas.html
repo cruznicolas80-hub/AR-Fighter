@@ -39,22 +39,171 @@
     </header>
 
     <main>
-        <section id="consultas">
-            <h2 class="text-center mb-4">Consultas</h2>
-            <form action="https://formspree.io/f/xpwyerqn" method="POST" class="mx-auto" style="max-width: 400px;">
+        <section class="container my-5">
+            <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true">
+                            ✈️ ¿Las maquetas vienen armadas?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nuestras maquetas están diseñadas para exhibición. Algunas vienen pre-armadas y otras
+                            incluyen
+                            piezas modulares fácilmente ensamblables.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            📐 ¿Qué significa la escala 1:72 o 1:48?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            La escala indica el tamaño del modelo respecto al avión real.
+                            Por ejemplo, 1:72 significa que el modelo mide 72 veces menos que el original.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">
+                            📦 ¿Realizan envíos a todo el país?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, realizamos envíos a toda Argentina con embalaje seguro para coleccionables.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4">
+                            💳 ¿Qué medios de pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Aceptamos tarjetas de crédito, débito, transferencias bancarias y plataformas digitales.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5">
+                            🔧 ¿Las piezas son reemplazables?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, muchos modelos cuentan con piezas intercambiables o reemplazables según disponibilidad.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="container my-5" id="ubicacion">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">¿Dónde estamos?</h2>
+                <p class="text-muted mb-0">
+                    Nos encontrás en <strong>Galería Jardín</strong>, Microcentro (CABA).
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Info -->
+                <div class="col-12 col-lg-6">
+                    <div class="p-4 bg-light rounded h-100">
+                        <h4 class="mb-3">📍 Galería Jardín</h4>
+
+                        <ul class="mb-3">
+                            <li><strong>Zona:</strong> Microcentro, CABA</li>
+                            <li><strong>Referencia:</strong> Cerca de Calle Florida / Plaza San Martín</li>
+                        </ul>
+
+                        <h5 class="mt-4">🚇 Formas de llegar</h5>
+                        <ul class="text-muted mb-0">
+                            <li><strong>Subte:</strong> (C estacion lavalle o B estacion Florida)</li>
+                            <li><strong>Colectivos:</strong> (Lineas 23 / 50 / 180)</li>
+                        </ul>
+
+                        <a class="btn btn-dark mt-4" target="_blank" rel="noopener"
+                            href="https://www.google.com/maps/search/?api=1&query=Galer%C3%ADa%20Jard%C3%ADn%20CABA">
+                            Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa (opcional) -->
+                <div class="col-12 col-lg-6">
+                    <div class="p-0 rounded overflow-hidden h-100 border">
+                        <iframe title="Mapa Galería Jardín"
+                            src="https://www.google.com/maps?q=Galer%C3%ADa%20Jard%C3%ADn%20CABA&output=embed"
+                            width="100%" height="100%" style="min-height: 320px; border: 0;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container my-5">
+
+        <section class="container my-5" id="otra-duda">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold ">¿Tenés otra duda?</h2>
+                <p class="text-muted mb-0">
+                    Escribinos por acá y te respondemos a la brevedad.
+                </p>
+            </div>
+
+            <!-- ✅ Formspree -->
+            <form class="mx-auto" style="max-width: 520px;" action="https://formspree.io/f/xpwyerqn" method="POST">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Tu email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+                    <label class="form-label fw-semibold">Tu nombre</label>
+                    <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="message" class="form-label">Tu mensaje:</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    <label class="form-label fw-semibold">Tu email</label>
+                    <input type="email" name="email" class="form-control" placeholder="tuemail@email.com" required>
                 </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Tu mensaje</label>
+                    <textarea name="message" class="form-control" rows="5" placeholder="Contanos tu consulta..."
+                        required></textarea>
+                </div>
+
+                <!-- Opcional: asunto -->
+                <input type="hidden" name="_subject" value="Nueva consulta - AR-Fighter">
 
                 <button type="submit" class="btn btn-primary w-100">Enviar</button>
+
+                <p class="text-center text-muted mt-3 mb-0" style="font-size: .9rem;">
+                    Respondemos lo antes posible.
+                </p>
             </form>
         </section>
+
     </main>
 
     <footer class="ar-footer-simple">

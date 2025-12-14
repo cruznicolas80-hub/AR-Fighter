@@ -182,3 +182,27 @@ document.addEventListener("click", e => {
 
     agregarAlCarrito(producto);
 });
+
+// ---------------- CARRITO.HTML: POPUP COMPRA CENTRADO ----------------
+if (window.location.pathname.includes("carrito.html")) {
+    const btnComprar = document.getElementById("btn-comprar");
+    const popup = document.getElementById("popup-compra");
+    const btnCerrar = document.getElementById("cerrar-popup");
+
+    if (btnComprar && popup && btnCerrar) {
+        btnComprar.addEventListener("click", () => {
+            popup.classList.add("show");
+        });
+
+        btnCerrar.addEventListener("click", () => {
+            popup.classList.remove("show");
+        });
+
+        // Cerrar haciendo click fuera del cuadro
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.classList.remove("show");
+            }
+        });
+    }
+}

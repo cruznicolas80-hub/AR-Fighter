@@ -212,7 +212,7 @@ main {
   opacity: 0.95;
   margin-bottom: 22px;
   text-shadow: 0 6px 18px rgba(0, 0, 0, .45);
-  
+
 }
 
 /* =====================================================
@@ -331,3 +331,58 @@ main {
     justify-content: center;
   }
 }
+
+/* Fondo oscuro */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+/* Caja del popup */
+.popup-box {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+/* Mostrar popup */
+.popup-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-overlay.show .popup-box {
+  transform: scale(1);
+}
+
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #212529;
+
+  color: #ffffff;
+}
+
+li {
+  list-style-type: none;
+}
+
